@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F1 Central - Home</title>
     <link rel="stylesheet" href="F1 central .css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const greeting = document.getElementById('greeting');
+            const hour = new Date().getHours();
+            if (hour < 12) {
+                greeting.textContent = 'Good Morning, Welcome to F1 Central';
+            } else if (hour < 18) {
+                greeting.textContent = 'Good Afternoon, Welcome to F1 Central';
+            } else {
+                greeting.textContent = 'Good Evening, Welcome to F1 Central';
+            }
+
+            const scrollToTopBtn = document.getElementById('scroll-to-top');
+            window.addEventListener('scroll', () => {
+                scrollToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+            });
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </head>
 <body>
-    <script></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="F1 central .html">Home</a></li>
+                <li><a href="f1centralpage2.html">Rivalry</a></li>
+                <li><a href="f1calander.html">2025 Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 id="greeting">Welcome to F1 Central</h1>
+            <p>Your ultimate hub for Formula 1 news, rivalries, and updates!</p>
+        </section>
+
+        <section class="news">
+            <h2>Latest F1 News</h2>
+            <ul>
+                <li>🏆 Max Verstappen secures his 4th World Championship! After absoloutly DESTROYING Lando Norris's Carrer.</li>
+                <li>🔧 Ferrari reveals groundbreaking new engine design for 2025, after making the one of the most shit driver changes for the 2 upcoming seasons.</li>
+                <li>📈 Mercedes' strategy overhaul: What to expect this season. I know what to expect in 2025 from them, 
+                    1st They have George Russel who can't drive under pressure, who crashes into everyone and then say's HE JUST FULLY TURNED INTO ME.
+                    2nd They have a rookie who will act like a rookie and crash into everone. 
+                    3rd Thier car will be an absolute BOAT. 
+                </li>
+            </ul>
+        </section>
+
+        <section class="feature">
+            <h2>Upcoming Races</h2>
+            <p>Check out the full 2025 F1 calendar to stay ahead of the action.</p>
+            <a href="f1calander.html" class="btn">View Calendar</a>
+        </section>
+    </main>
+
+    <button id="scroll-to-top">↑</button>
+
+    <footer>
+        <p>&copy; 2025 F1 Central. Built for fans, by fans.</p>
+    </footer>
 </body>
 </html>

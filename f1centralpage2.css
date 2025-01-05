@@ -1,0 +1,132 @@
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff1e00;
+}
+
+/* Intro Section */
+.rivalry-intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 30, 0, 0.8)), url('../images/rivalry-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.rivalry-intro h1 {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.rivalry-intro p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* Teams Section */
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.teams article {
+    background: #202020;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.teams article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 30, 0, 0.6);
+}
+
+.teams h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff1e00;
+    margin-bottom: 1rem;
+}
+
+.teams p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #ff1e00;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+/* Hidden Content */
+.more-info {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}

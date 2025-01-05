@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Rivalries</title>
+    <link rel="stylesheet" href="f1centralpage2.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.read-more-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const moreInfo = btn.nextElementSibling;
+                    moreInfo.style.display = moreInfo.style.display === 'block' ? 'none' : 'block';
+                    btn.textContent = btn.textContent === 'Read More' ? 'Read Less' : 'Read More';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="F1 central .html">Home</a></li>
+                <li><a href="f1calander.html">Rivalry</a></li>
+                <li><a href="f1calander.html">2025 Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rivalry-intro">
+            <h1>Legendary F1 Rivalries</h1>
+            <p>Formula 1 has been built on the back of epic rivalries. These intense battles have shaped the sport, driven innovation, and captured the imaginations of fans worldwide. Today, we’ll explore the stories of three legendary teams: Ferrari, Red Bull Racing, and Mercedes.</p>
+        </section>
+
+        <section class="teams">
+            <!-- Ferrari Section -->
+            <article>
+                <h2>Ferrari</h2>
+                <p>
+                    Ferrari, the most iconic name in motorsport, has been a cornerstone of Formula 1 since the very beginning. Founded by Enzo Ferrari in 1947, the Scuderia joined the F1 championship in 1950 and quickly cemented its status as a powerhouse. Ferrari’s blood-red cars, known as the "Prancing Horse," are synonymous with speed, prestige, and passion. 
+                </p>
+                <p>
+                    Over the decades, Ferrari has experienced both glorious highs and devastating lows. Drivers such as Alberto Ascari, Niki Lauda, and Michael Schumacher have delivered unforgettable moments, each etching their name into the annals of F1 history. Schumacher’s dominance in the early 2000s, where he secured five consecutive world championships, is a testament to Ferrari’s relentless pursuit of excellence. 
+                </p>
+                <p>
+                    However, Ferrari’s legacy extends beyond just statistics. Their passionate fanbase, known as the "Tifosi," is one of the most loyal and enthusiastic in the world. Every race weekend, you’ll find them draped in red, waving flags and cheering for their team through thick and thin. This connection with their fans has made Ferrari more than just a team—it’s a way of life for millions.
+                </p>
+                <button class="read-more-btn">Read More</button>
+                <p class="more-info" style="display:none;">
+                    In recent years, Ferrari has faced fierce competition from the likes of Mercedes and Red Bull. Despite these challenges, they remain a formidable force, continuously developing new technologies and strategies to return to the top of the standings. The current driver lineup of Charles Leclerc and Carlos Sainz represents a blend of youthful talent and experience, aiming to restore Ferrari to its former glory. Whether they succeed or not, one thing is certain: Ferrari’s story in Formula 1 is far from over.
+                </p>
+            </article>
+
+            <!-- Red Bull Racing Section -->
+            <article>
+                <h2>Red Bull Racing</h2>
+                <p>
+                    Red Bull Racing burst onto the Formula 1 scene in 2005, bringing a fresh and dynamic energy to the paddock. Known for their bold marketing, unconventional approaches, and razor-sharp focus on aerodynamics, Red Bull quickly established themselves as serious contenders. 
+                </p>
+                <p>
+                    Under the guidance of team principal Christian Horner and with the technical genius of Adrian Newey, Red Bull achieved unparalleled success in the early 2010s. Between 2010 and 2013, Sebastian Vettel dominated the sport, winning four consecutive world championships and solidifying Red Bull’s reputation as the team to beat. Their innovative designs, particularly in the field of downforce, set them apart from their competitors.
+                </p>
+                <p>
+                    In recent years, Red Bull has reignited its rivalry with Mercedes, culminating in one of the most dramatic seasons in F1 history in 2021. Max Verstappen, the team’s star driver, showcased his extraordinary skill and tenacity, battling Lewis Hamilton race after race. The championship was decided in a nail-biting final race, further cementing Red Bull’s status as one of the most thrilling teams in F1.
+                </p>
+                <button class="read-more-btn">Read More</button>
+                <p class="more-info" style="display:none;">
+                    Beyond their on-track performance, Red Bull has also excelled in promoting young talent through their junior driver program. Many of today’s top drivers, including Verstappen, Daniel Ricciardo, and Pierre Gasly, owe their careers to Red Bull’s unwavering belief in nurturing the next generation. As the sport evolves, Red Bull continues to innovate, pushing the limits of what’s possible in pursuit of victory.
+                </p>
+            </article>
+
+            <!-- Mercedes Section -->
+            <article>
+                <h2>Mercedes</h2>
+                <p>
+                    Mercedes-Benz, a name synonymous with engineering brilliance, returned to Formula 1 as a works team in 2010, aiming for nothing less than domination. And dominate they did. With Lewis Hamilton leading the charge, Mercedes ushered in the hybrid era with unprecedented success, winning seven consecutive constructors’ championships from 2014 to 2020.
+                </p>
+                <p>
+                    The Silver Arrows’ success is built on a foundation of cutting-edge technology, meticulous strategy, and a relentless drive for perfection. Mercedes revolutionized power unit design, creating an engine that not only delivered unparalleled speed but also unmatched reliability. This engineering prowess, combined with Hamilton’s exceptional driving talent, made them virtually untouchable for years.
+                </p>
+                <p>
+                    Mercedes’ rivalry with Red Bull has provided fans with some of the most intense battles in recent memory. The 2021 season, in particular, was a rollercoaster of emotions, with Hamilton and Verstappen fighting tooth and nail for the title. Although Mercedes narrowly lost the drivers’ championship, their ability to adapt and bounce back remains their greatest strength.
+                </p>
+                <button class="read-more-btn">Read More</button>
+                <p class="more-info" style="display:none;">
+                    As Formula 1 continues to evolve, Mercedes faces new challenges, including adapting to the latest technical regulations. Yet, their commitment to innovation and excellence ensures they will remain a dominant force in the sport. With a strong lineup of drivers and a brilliant team behind the scenes, Mercedes’ journey in F1 is far from over.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 F1 Central. Built for fans, by fans.</p>
+    </footer>
+</body>
+</html>
